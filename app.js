@@ -14,7 +14,10 @@ while(input !== 'quit' || input !== 'q'){
         console.log("*****************");
     }
     else if(input === "delete"){
-        console.log("delete");
+        let indexInput = prompt("Enter index to delete");
+        let delIndex = parseInt(indexInput);
+        list.splice(delIndex,1);
+        console.log(`Item ${delIndex} deleted.`);
     }
     else if(input === "quit"){
         console.log("quitting");
